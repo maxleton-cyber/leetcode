@@ -46,11 +46,7 @@ class Solution {
                 }
             }
         }
-        if(temp!=null&&temp==nums[k])
-        {
-            k=k+2;
-        }
-        else k++;
+        k=temp!=null&&temp==nums[k]?k+2:k+1;
         return k;
     }
 }
